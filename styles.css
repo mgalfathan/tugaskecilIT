@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
+
+@font-face {
+    font-family: "NugiraRilasto";
+    src: url("fonts/nugira-rilasto.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    background: rgb(0, 0, 0);
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 95%;
+    max-width: 600px;
+}
+
+.link {
+    display: block;
+    font-family: 'Parkinsans', Comic;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 15px;
+    background: #ff0202;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 50px;
+    margin-bottom: 15px;
+    transition: background 0.3s;
+}
+
+.link:hover {
+    background: #efeffa;
+}
+
+h1 {
+    font-family: "NugiraRilasto";
+    font-size: 60px;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
