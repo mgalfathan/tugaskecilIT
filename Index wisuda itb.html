@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linktree Clone</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
+
+        @import url('https://www.myfonts.com/collections/nugira-rilasto-font-timelesstype-studio?srsltid=AfmBOor82MchJvyYDsue9UqfaoRMkG9_I9HTd8wBg-x4zSIMO6jL3TE7');
+        @font-face {
+            font-family: "NugiraRilasto";
+            src: url(fonts/nugira-rilasto.otf) format('opentype');
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            text-align: center;
+            background: rgb(0, 0, 0);
+            padding: 30px;
+            border-radius: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 95%;
+            max-width: 600px;
+        }
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .link {
+            display: block;
+            font-family: 'Parkinsans', Comic;
+            font-size: 25px;
+            font-weight: 600;
+            padding: 15px;
+            background: #ff0202;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            border-radius: 50px;
+            margin-bottom: 15px;
+            transition: background 0.3s;
+        }
+        .link:hover {
+            background: #efeffa;
+        }
+        .parkinsans-SemiBold {
+            font-family: "Parkinsans";
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+        
+        h1 {
+            font-family: 'NugiraRilasto';
+            text-align: auto;
+            font-size: 60px;
+    
+            color: #ffffff;
+            margin-bottom: 30px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Archive Website Wisuda ITB</h1>
+    </div>
+    <script>
+        const links = [
+            { name: 'Wisuda April 2025', url: 'https://www.wispril2025.wisudaitb.id' },
+            { name: 'Wisuda Oktober 2024', url: 'https://www.wispril2025.wisudaitb.id' },
+            { name: 'Wisuda April 2024', url: 'https://www.wispril2025.wisudaitb.id' },
+            { name: 'Wisuda Oktober 2023', url: 'https://www.wispril2025.wisudaitb.id' }
+        ];
+
+        const container = document.querySelector('.container');
+
+        links.forEach(link => {
+            const a = document.createElement('a');
+            a.href = link.url;
+            a.textContent = link.name;
+            a.className = 'link';
+            container.appendChild(a);
+        });
+    </script>
+</body>
+</html>
